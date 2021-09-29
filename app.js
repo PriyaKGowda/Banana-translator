@@ -1,13 +1,12 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var textInput = document.querySelector("#text-input");
+var outputDiv = document.querySelector("#output");
 
-console.log(textInput);
-console.log(btnTranslate);
+
 
 function clickHandler() 
 {
-        console.log("clicked");
-        console.log("text",textInput);
+   outputDiv.innertext = "Is wash ter gass"+ textInput.value ;    
 };
 
 btnTranslate.addEventListener("click",clickHandler);
